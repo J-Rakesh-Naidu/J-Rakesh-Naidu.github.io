@@ -1,0 +1,59 @@
+.heading2 {
+    text-align: center;
+}
+
+
+/*alignment of media using flex*/
+.gallerypart{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    width: 180px;
+    border: 1px solid #000;
+    display: inline-block;
+    margin: 10px 20px;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/*shadow effect for images*/
+
+.gallery:hover {
+    border: 1px solid #777;
+    box-shadow: 0 18px 18px 0 rgba(0, 0, 0, 0.5), 0 16px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+}
+
+.concert .gallery{
+    margin: 3px 3px;
+}
+
+.concert img{
+    height: 300px;
+}
+
+.photoshoot img{
+    height: 120px;
+}
+
+.carpet .gallery{
+    margin: 3px 3px;
+}
+
+.carpet img{
+    height: 275px;
+}
+
+.videos video{
+    width: 300px;
+    height: 200px;
+}

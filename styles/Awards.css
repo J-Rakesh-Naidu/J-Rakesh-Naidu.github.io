@@ -1,0 +1,66 @@
+/*css for images positioning and float effect when scrolled*/
+
+.awardsimg{
+    float: right;
+    margin-right: 30px;
+}
+
+.float-img {
+    border: gold solid 2px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.float-img.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*table for awards*/
+table {
+    width: 60%;
+    border-collapse: collapse;
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+}
+
+th {
+    background-color: #c791cc;
+    text-align: left;
+    padding: 5px;
+    font-weight: bold;
+}
+
+td {
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(241, 163, 202);
+}
+
+tr:hover {
+    background-color: rgb(85, 200, 238);
+}
+
+/* Additional styles for specific cells */
+
+td:first-child {
+    font-weight: bold;
+    color: #45008a;
+}
+
+td:nth-child(2) {
+    font-style: italic;
+}
+
+.float-img{
+    float: right;
+}
+
+@media only screen and (max-width: 1000px) {
+    table {
+        width: 100%;
+    }
+}

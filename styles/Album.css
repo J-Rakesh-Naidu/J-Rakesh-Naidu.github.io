@@ -1,0 +1,44 @@
+@import url('//db.onlinewebfonts.com/c/77576ff6ead1d882deb79df39f3fba90?family=Engravers+Old+English');
+
+.albumsec {/*GRID display of albums*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 50px;
+    /* display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; */
+}
+
+.albumsec div { /*background of the album*/
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 0;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.albumsec div img {
+    max-width: 250px;
+    margin: 0 50px;
+}
+
+/*SHADOW TRANSITION EFFECT*/
+.albumsec div:hover {
+    box-shadow: 30px 20px 30px 0 rgba(0, 0, 0, 0.2), 30px 20px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.albumsec div h2 {
+    letter-spacing: 1px;
+}
+
+.albumsec :nth-child(6) {
+    font-family: 'Engravers Old English';
+}
+
+/*IFRAME SIZE FOR SONGS*/
+#myIframe {
+    width: 100%;
+    display: none;
+}
