@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+    <link rel="stylesheet" href="/styles/Album.css">
+    <link rel="stylesheet" href="/styles/Common.css">
+    <title>Taylor Swift | Albums</title>
+    <link rel="icon" type="image/x-icon" href="/images/TS-icon.png">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div class="nav-header">
+        <div class="nav-title">
+            <img src="/images/TS-title2.png">
+            <div class="navbar">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="nav-links">
+            <ul class="navlist">
+                <div class="left">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="Albums.html">Albums</a></li>
+                    <li><a href="Media.html">Media</a></li>
+                    <li><a href="Awards.html">Achievements</a></li>
+                    <li><a href="Merch.html">Merch</a></li>
+                    <li><a href="Contact.html">Be a Swiftie</a></li>
+                </div>
+                <div class="right">
+                    <li><a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02" target="_blank">
+                            <i class="fab fa-spotify fa-2x icon"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://www.instagram.com/taylorswift/?__coig_restricted=1" target="_blank">
+                            <i class="fab fa-instagram fa-2x icon"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://www.youtube.com/channel/UCqECaJ8Gagnn7YCbPEzWH6g" target="_blank">
+                            <i class="fab fa-youtube fa-2x icon"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://twitter.com/taylorswift13" target="_blank">
+                            <i class="fab fa-twitter fa-2x icon"></i>
+                        </a>
+                    </li>
+                    <li><a href="https://www.snapchat.com/add/taylorswift" target="_blank">
+                            <i class="fab fa-snapchat fa-2x icon"></i></li>
+                    </a>
+                    <li><a href="https://www.facebook.com/TaylorSwift/" target="_blank">
+                            <i class="fab fa-facebook fa-2x icon"></i>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Albums -->
+    <div class="torso">
+        <h1 class="heading1">Albums</h1>
+        <hr>
+        <div class="albumsec">
+            <div onclick="openFile('albums/TaylorSwift.html')">
+                <img src="/images/Albums/Album1.webp"><br>
+                <img src="/images/Albums/Taylor_Swift.png" height="75px">
+            </div>
+            <div onclick="openFile('albums/Fearless.html')">
+                <img src="/images/Albums/Album2.webp"><br>
+                <img src="/images/Albums/fearless-original-font.png" height="75px">
+            </div>
+            <div onclick="openFile('albums/SpeakNow.html')">
+                <img src="/images/Albums/Album3.webp"><br>
+                <img src="/images/Albums/Speak-now-font.png" height="75px">
+            </div>
+            <div onclick="openFile('albums/Red.html')">
+                <img src="/images/Albums/Album4.webp"><br>
+                <img src="/images/Albums/Red_original_album.png" height="75px">
+            </div>
+            <div onclick="openFile('albums/1989.html')">
+                <img src="/images/Albums/Album5.webp"><br>
+                <img src="/images/Albums/1989-font.png" height="75px">
+            </div>
+            <div onclick="openFile('albums/Reputation.html')">
+                <img src="/images/Albums/Album6.webp">
+                <h2 class="heading2" style="color: black;">reputation</h2>
+            </div>
+            <div onclick="openFile('albums/Lover.html')">
+                <img src="/images/Albums/Album7.webp"><br>
+                <img src="/images/Albums/lover-font.png" height="75px">
+            </div>
+            <div onclick="openFile('albums/Folklore.html')">
+                <img src="/images/Albums/Album8.jpg"><br>
+                <img src="/images/Albums/folklore-font.png" height="75px">
+            </div>
+            <div onclick="openFile('albums/Evermore.html')">
+                <img src="/images/Albums/Album9.webp"><br>
+                <img src="/images/Albums/Evermore.png" height="75px">
+            </div>
+            <div onclick="openFile('albums/FearlessTay.html')">
+                <img src="/images/Albums/Album10.jpg"><br>
+                <img src="/images/Albums/fearless-font.png" height="75px">
+            </div>
+            <div onclick="openFile('albums/REDTay.html')">
+                <img src="/images/Albums/Album11.webp"><br>
+                <img src="/images/Albums/RED-font.png" height="75px">
+            </div>
+            <div onclick="openFile('albums/Midnights.html')">
+                <img src="/images/Albums/Album12.webp"><br>
+                <img src="/images/Albums/Midnights-font.jpeg" height="75px">
+            </div>
+            <!-- <div>
+                <img src="/images/Albums/Album13.webp"><br>
+                <img src="/images/Albums/speak-now-taylor's-font.webp" height="75px">
+            </div> -->
+        </div>
+
+        <!-- Iframe of songs -->
+        <iframe id="myIframe" src="" onload="resizeIframe()"></iframe><br>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <p>© 2007-2023 TAYSWIFT.COM<br>
+            Thank you for visiting and come again soon!</p>
+    </div>
+    <script src="/scripts/Albums.js"></script>
+    <script src="/scripts/Common.js"></script>
+</body>
+</html>

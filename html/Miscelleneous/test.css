@@ -1,0 +1,309 @@
+body{
+    /* background-image: url("/images/background6.webp");
+    background-repeat: no-repeat;
+    /* background-size:cover; */
+    /* background-color: rgb(0, 0, 0); */
+    margin: 0 100px;
+    padding: 0;
+}
+
+.space-background {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .space-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("star.png"); /* Replace with your star image */
+    background-repeat: repeat;
+    z-index: -1;
+  }
+  
+  .space-background::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-image: radial-gradient(white 1px, transparent 1px);
+    background-size: 3px 3px;
+    animation: stars 10s infinite;
+  }
+  
+  @keyframes stars {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 10000px 10000px;
+    }
+  }
+  
+
+.nav-header{
+    width: 100%;
+}
+
+.nav-title{
+    text-align: center;
+    background-image: linear-gradient(-30deg,rgb(218, 131, 219),rgb(105, 169, 200) 10%,rgb(226, 116, 215));
+}
+
+.nav-title img{
+    height: 75px;
+    margin-top: 5px;
+}
+
+.navbar {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    float: right;
+    cursor: pointer;
+    margin: 25px 30px 25px 0;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+.navbar.clicked .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.navbar.clicked .line:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar.clicked .line:nth-child(3) {
+    transform: rotate(45deg) translate(-4px, -4px);
+}
+
+.navlist{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left,.right{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.left a{
+    text-decoration: none;
+    margin: 5px;
+    display: block;
+    border-radius: 10px;
+    padding: 14px 16px;
+    color: wheat;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium','Yu Gothic UI Semibold', 'Arial Narrow', Arial, sans-serif;
+}
+
+.left a:hover{
+    background-image:linear-gradient(rgb(233, 84, 193),rgba(235, 24, 172, 0.762));
+    color:gold;
+    box-shadow: 2px 2px #000;
+}
+
+.active{
+    box-shadow: 2px 2px #000;
+    background-image: linear-gradient(-30deg,rgb(218, 131, 219),rgb(105, 169, 200) 10%,rgb(226, 116, 215));
+}
+
+.icon{
+    width: 50px;
+    margin: 5px;
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    color: transparent;
+    background-image: linear-gradient(-30deg,rgb(218, 131, 219),rgb(105, 169, 200) 10%,rgb(226, 116, 215));
+}
+
+.icon:hover{
+    color:gold;
+}
+
+.torso {
+    background-color: rgba(255, 255, 255, 1);
+    /* background-image: linear-gradient(-30deg,rgb(218, 131, 219),rgb(105, 169, 200) 10%,rgb(226, 116, 215)); */
+    padding: 40px;
+    padding-bottom: 0;
+    padding-top: 0.1px;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading1, .heading2{
+    font-weight:bolder;
+    font-size:xx-large;
+    text-decoration: none;
+    color: rgb(89, 89, 202);
+}
+
+.heading2{
+    font-size: x-large;
+}
+
+.biography img{
+    margin-left: 8px;
+}
+
+.homepics{
+    border: 2px solid rgb(111, 111, 151);
+    float: right;
+    transition: transform 0.5s ease-in-out;
+}
+
+.enlarge-img:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.facts b{
+    color: rgb(123, 123, 183);
+}
+
+.factsflex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    transition: all 0.3s ease;
+}
+
+.footer {
+    margin-top: 0;
+    margin-right: 0;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 98.5%;
+    background-image: url("/images/background4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(17, 13, 13);
+    font-weight: bold;
+}
+
+@media (max-width: 1250px){
+    .navbar{
+        display: flex;
+    }
+
+    .navlist{
+        justify-content: space-around;
+    }
+
+    .nav-links{
+        max-height: 0;
+        overflow: hidden;
+        background-color: lightpink;
+        transition: max-height 0.3s ease;
+    }
+
+    .left,.right{
+        flex-direction: column;
+    }
+    
+    .icon{
+        margin-top: 12.5px;
+        margin-bottom: 12.5px;
+    }
+
+    .nav-links.open {
+        max-height: 400px;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .footer{
+        width: 98%;
+    }
+}
+
+@media (max-width:1000px) {
+    body{
+        margin: 0;
+    }
+}
+
+@media (max-width:800px) {
+    .factsflex{
+        flex-direction: column;
+    }
+
+    .factsitem2{
+        margin: 2vh auto 2vh auto;
+    }
+
+    .footer{
+        width: 94vw;
+    }
+}
+
+      
+.images {display: none}
+
+.fade img {
+    vertical-align: middle;
+    width:100%;
+    max-height: 650px;
+}
+
+/* Slideshow container */
+.carousel-container {
+   width: 100%;
+   position: relative;
+   margin: auto;
+}
+
+/* Next & previous buttons */
+.previous, .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 16px;
+   margin-top: -22px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit seethrough */
+.prev:hover, .next:hover {
+   background-color: rgba(0,0,0,0.8);
+}
